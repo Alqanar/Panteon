@@ -1,0 +1,7 @@
+.main-header {
+  @include content;
+  @include content-margin;
+  position: relative;
+  z-index: 3;
+  padding-top: 18px;
+}

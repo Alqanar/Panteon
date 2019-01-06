@@ -1,0 +1,71 @@
+.destination {
+  @include proxima;
+  background-image: url("../img/Background1.png"), linear-gradient(to right, $crimson-dark 50%, $crimson-light 50%);
+  background-repeat: no-repeat;
+  background-color: $crimson-color;
+  background-position: top center;
+  margin-top: -65px;
+  color: $white-color;
+}
+
+.destination-wrapper {
+  @include content;
+  @include content-margin;
+  @include proxima;
+  font-size: 14px;
+  padding-bottom: 47px;
+}
+
+.destination__wrapper-title {
+  @include proxima-uppercase;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap-reverse;
+  padding-top: 132px;
+}
+
+.destination__title {
+  font-size: 70px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.destination__text {
+  line-height: 11px;
+}
+
+.destination__wrapper-video-picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 61px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 119px;
+    top: 45px;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.destination__video-picture {
+  width: 214px;
+  height: 139px;
+}
+
+.destination__video-description {
+  position: absolute;
+  line-height: 17px;
+  width: 26%;
+  left: 205px;
+  top: 388px;
+  color: $pink-color;
+}
+
+.destination__button-down {
+  margin-top: 90px;
+}

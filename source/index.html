@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
-    <!-- <link rel="preload" type="font/woff2" href="fonts/oswaldregular.woff2" as="font" crossorigin>
-    <link rel="preload" type="font/woff2" href="fonts/oswaldmedium.woff2" as="font" crossorigin> -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" type="font/woff2" href="fonts/ProximaNovaAltLight.woff2" as="font" crossorigin>
+    <link rel="preload" type="font/woff2" href="fonts/ProximaNovaBold.woff2" as="font" crossorigin>
     <title>Panteon</title>
     <script src="js/picturefill.min.js" async></script>
   </head>
@@ -15,22 +15,25 @@
     </div> -->
     <header class="main-header">
       <span class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo.svg" width="145" height="40" alt="Логотип проекта Пантеон">
+        <img class="main-header__logo-image" src="img/logo.png" width="145" height="40" alt="Логотип проекта Пантеон">
       </span>
       <button class="sandwich-button" type="button">Меню</button>
     </header>
     <main class="main-content">
       <section class="destination">
-        <div class="destination__wrapper-title">
-          <h1 class="title destination__title">Марс</h1>
-          <p class="destination__title">Пункт назначения:</p>
-          <p class="title-regular destination__title">Пантеон,</p>
+        <div class="destination-wrapper">
+          <div class="destination__wrapper-title">
+            <h1 class="title destination__title">Марс</h1>
+            <p class="destination__text">Пункт назначения: Пантеон,</p>
+          </div>
+          <div class="destination__wrapper-video-picture">
+            <picture>
+              <img class="destination__video-picture" src="img/first-city.png" alt="Видео про первый город на планете Марс">
+            </picture>
+          </div>
+          <p class="destination__video-description">Первый город на&nbsp;планете Марс недалеко от горы Олимп</p>
+          <button class="destination__button-down">Вниз</button>
         </div>
-        <picture>
-          <img class="destination__video-picture" src="#" alt="Видео про первый город на планете Марс">
-        </picture>
-        <p class="destination__video-description">Первый город на планете Марс недалеко от горы Олимп</p>
-        <button class="destination__button-down">Вниз</button>
       </section>
       <section class="about-mars">
         <h2 class="visual-hidden">Факты о Марсе</h2>

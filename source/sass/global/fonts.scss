@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Oswald";
+  font-family: "ProximaNova";
   src:
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
+    url("../fonts/ProximaNovaAltLight.woff2") format("woff2"),
+    url("../fonts/ProximaNovaAltLight.woff") format("woff");
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "ProximaNova";
   src:
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+    url("../fonts/ProximaNovaBold.woff2") format("woff2"),
+    url("../fonts/ProximaNovaBold.woff") format("woff");
   font-display: swap;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
