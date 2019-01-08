@@ -3,5 +3,7 @@
   @include content-margin;
   position: relative;
   z-index: 3;
-  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }

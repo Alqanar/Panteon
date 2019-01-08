@@ -55,8 +55,15 @@
 }
 
 @mixin proxima-bold {
+  margin: 0;
   font-family: "ProximaNova", "Arial", sans-serif;
   font-weight: 700;
+}
+
+@mixin proxima-black {
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 900;
 }
 
 @mixin proxima-uppercase {

@@ -1,277 +1,306 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <link rel="preload" type="font/woff2" href="fonts/ProximaNovaAltLight.woff2" as="font" crossorigin>
-    <link rel="preload" type="font/woff2" href="fonts/ProximaNovaBold.woff2" as="font" crossorigin>
-    <title>Panteon</title>
-    <script src="js/picturefill.min.js" async></script>
-  </head>
-  <body>
-    <!-- <div style="display: none">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preload" type="font/woff2" href="fonts/ProximaNovaBlack.woff2" as="font" crossorigin>
+  <link rel="preload" type="font/woff2" href="fonts/ProximaNovaAltLight.woff2" as="font" crossorigin>
+  <link rel="preload" type="font/woff2" href="fonts/ProximaNovaBold.woff2" as="font" crossorigin>
+  <title>Panteon</title>
+  <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+  <!-- <div style="display: none">
       <include src="img/sprite.svg"></include>
     </div> -->
-    <header class="main-header">
-      <span class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo.png" width="145" height="40" alt="Логотип проекта Пантеон">
-      </span>
-      <button class="sandwich-button" type="button">Меню</button>
-    </header>
-    <main class="main-content">
-      <section class="destination">
-        <div class="destination-wrapper">
-          <div class="destination__wrapper-title">
-            <h1 class="title destination__title">Марс</h1>
-            <p class="destination__text">Пункт назначения: Пантеон,</p>
-          </div>
-          <div class="destination__wrapper-video-picture">
-            <picture>
-              <img class="destination__video-picture" src="img/first-city.png" alt="Видео про первый город на планете Марс">
-            </picture>
-          </div>
-          <p class="destination__video-description">Первый город на&nbsp;планете Марс недалеко от горы Олимп</p>
-          <button class="destination__button-down">Вниз</button>
+  <header class="main-header">
+    <span class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo.png" width="143" height="37" alt="Логотип проекта Пантеон">
+    </span>
+    <button class="sandwich-button" type="button">Меню
+      <span class="sandwich-button__main-line"></span>
+    </button>
+  </header>
+  <main class="main-content">
+    <section class="destination">
+      <div class="destination-wrapper">
+        <div class="destination__wrapper-title">
+          <h1 class="destination__title">Марс</h1>
+          <p class="destination__text">Пункт назначения: Пантеон,</p>
         </div>
-      </section>
-      <section class="about-mars">
-        <h2 class="visual-hidden">Факты о Марсе</h2>
-        <ul class="facts">
-          <li class="facts__item">
-            <p class="facts__number">4</p>
-            <p class="facts__text">четвёртая планета по удалённости от Солнца.</p>
-          </li>
-          <li class="facts__item">
-            <p class="facts__number">7</p>
-            <p class="facts__text">седьмая по размерам планета Солнечной системы.</p>
-          </li>
-          <li class="facts__item facts__item--tablet">
-            <p class="facts__number">10,7%</p>
-            <p class="facts__text">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле).</p>
-          </li>
-          <li class="facts__item facts__item--tablet">
-            <p class="facts__number">2</p>
-            <p class="facts__text">спутника вместо Луны (как картошка, только больше).</p>
-          </li>
-          <li class="facts__item facts__item--desktop">
-            <p class="facts__number">21 км</p>
-            <p class="facts__text">высота самой высокой горы Марса.</p>
-          </li>
-          <li class="facts__item facts__item--desktop">
-            <p class="facts__number">+20</p>
-            <p class="facts__text">максимальная температура на поверхности.</p>
-          </li>
-        </ul>
-      </section>
-      <section class="information">
-        <h2 class="title red-title information__title">Марс. Вспомнить всё</h2>
-        <div class="information__paper paper">
-          <h3 class="paper__title">Что такое Марс?</h3>
-          <p class="text paper__text">
-            Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа. 
-          </p>
-          <p class="text paper__text">
-            Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.
-          </p>
+        <div class="destination__wrapper-video-picture">
+          <picture>
+            <img class="destination__video-picture" src="img/first-city.png" alt="Видео про первый город на планете Марс">
+          </picture>
         </div>
-        <div class="information__paper paper">
-          <h3 class="paper__title">Где это? Как туда  доехать??</h3>
-          <p class="text paper__text">
-              Расстояние до Марса — почти 56 миллионов километров. 
-          </p>
-          <p class="text paper__text">
-            Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.
-          </p>
-        </div>
-      </section>
-      <section class="development">
-        <div class="development__wrapper-mask">
-          <h2 class="title red-title development__title">От идеи до реализации</h2>
-          <div class="development__paper paper">
-            <h3 class="paper__title">Илон Маск. Гений или безумец?</h3>
-            <p class="text paper__text">
-                Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.
-            </p>
-            <div class="development__photo"></div>
-            <p class="text paper__text paper__text--red">
-                Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность
-            </p>
-            <p class="text paper__text">
-              — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».
-                Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.
-            </p>
-          </div>
-        </div>
-        <div class="development__wrapper-cost">
-          <div class="development__photo"></div>
-          <div class="development__paper paper">
-            <h3 class="white-title paper__title">Стоимость перелёта</h3>
-            <p>
-              Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. 
-              Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
-            </p>
-          </div>
-          <p class="development__money">$500 k</p>
-          <p class="development__on-mars">и ты на Марсе!</p>
-          <a class="link luminous-button development__button" href="#">Я готов лететь!</a>
-        </div>
-      </section>
-      <section class="questions">
-        <h2 class="title questions__title">Подводные камни в масштабах космоса</h2>
-        <picture>
-          <img class="questions__video-picture" src="#" alt="Видео про обустройство и жизнь на Марсе">
-        </picture>
-        <ul class="same-list questions__checkbox">
-          <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="survive" id="survive" checked>
-            <label class="questions__label" for="survive">Жить или выживать?</label>
-            <p class="questions__text">
-              Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?
-            </p>
-            <p class="questions__text">
-              Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
-            </p>
-            <p class="questions__text">
-              На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.
-            </p>
-          </li>
-          <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="technology" id="technology">
-            <label class="questions__label" for="technology">Готовы ли технологии?</label>
-            <p class="questions__text">
-              Конечно
-            </p>
-          </li>
-          <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="fantastic" id="fantastic">
-            <label class="questions__label" for="fantastic">Путешествие на грани фантастики</label>
-            <p class="questions__text">
-              Наши бабушки и дедушки могли лишь фантазировать на тему полетов на Марс. А мы осуществляем это!
-            </p>
-          </li>
-          <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="live" id="live">
-            <label class="questions__label" for="live">Жизнь на Марсе</label>
-            <p class="questions__text">
-              Будет сложно, но мы справимся!
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="colony">
-        <h2 class="title red-title colony__title">Организация жизни в колонии</h2>
-        <ul class="same-list">
-          <li class="colony__item">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="residence" value="residence" checked>
-            <label class="colony__label" for="residence">Проживание</label>
-            <div class="colony__residence-photo"></div>
-            <div class="paper colony__paper">
-              <h3 class="paper__title">Проживание</h3>
-              <p class="text paper__text">
-                В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.
-              </p>
-            </div>
-            <a class="link colony__button" href="#">Подробнее</a>
-          </li>
-          <li class="colony__item">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="research-centers" value="research-centers">
-            <label class="colony__label" for="research-centers">Исследовательские центры</label>
-            <div class="colony__research-centers-photo"></div>
-            <div class="paper colony__paper">
-              <h3 class="paper__title">Исследовательские центры</h3>
-              <p class="text paper__text">
-                Статья в процессе написания
-              </p>
-            </div>
-            <a class="link colony__button" href="#">Подробнее</a>
-          </li>
-          <li class="colony__item">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="study" value="study">
-            <label class="colony__label" for="study">Исследования Марса</label>
-            <div class="colony__study-photo"></div>
-            <div class="paper colony__paper">
-              <h3 class="paper__title">Исследования Марса</h3>
-              <p class="text paper__text">
-                Обнаружение на Земле метеоритов марсианского происхождения позволило исследовать химический состав поверхности планеты. В настоящее время Марс по-прежнему находится под наблюдением наземных телескопов и радиотелескопов, позволяющих исследовать поверхность планеты в широком диапазоне электромагнитных волн. Дальнейший прогресс в исследовании Марса связан с продолжением исследования планеты дистанционно управляемыми космическими аппаратами и осуществлением пилотируемого полёта на Марс.
-              </p>
-            </div>
-            <a class="link colony__button" href="#">Подробнее</a>
-          </li>
-          <li class="colony__item">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="photo" value="photo">
-            <label class="colony__label" for="photo">Фотографии</label>
-            <div class="colony__photo-photo"></div>
-            <div class="paper colony__paper">
-              <h3 class="paper__title">Фотографии</h3>
-              <p class="text paper__text">
-                У Вас будет огромное количество уникальных фотографий.
-              </p>
-            </div>
-            <a class="link colony__button" href="#">Подробнее</a>
-          </li>
-          <li class="colony__item">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="plants" value="plants">
-            <label class="colony__label" for="plants">Выращивание растений</label>
-            <div class="colony__plants-photo"></div>
-            <div class="paper colony__paper">
-              <h3 class="paper__title">Выращивание растений</h3>
-              <p class="text paper__text">
-                Вы не будете скучать по своей даче, так как для того, чтобы выжить Вам нужно будет выращивать растения, которые будут обеспечивать Вашу жизнь.
-              </p>
-            </div>
-            <a class="link colony__button" href="#">Подробнее</a>
-          </li>
-        </ul>
-      </section>
-      <section class="flight-information">
-        <h2 class="title flight-information__title">Деньги  приготовил. Когда вылетаем?</h2>
-        <p class="text flight-information__text">
-          Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.
-        </p>
-        <p class="text flight-information__text">
-          Для всех желающих открыты курсы подготовки.
-        </p>
-        <p class="text flight-information__text">
-          За 40-100 ближайших лет на Марс планируется доставить до 1 млн.
-        </p>
-        <a class="flight-information__link" href="#">Критерии отбора</a>
-      </section>
-      <section class="subscription">
-        <h3 class="title white-title">Будь в курсе новостей</h3>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="subscription__row">
-            <label class="visual-hidden" for="name">Имя</label>
-            <input class="subscription__form-field" id="name" type="text" name="name" placeholder="Имя">
-          </p>
-          <p class="subscription__row">
-            <label class="visual-hidden" for="email">Электронная почта</label>
-            <input class="subscription__form-field" id="email" type="email" name="email" placeholder="E-mail">
-          </p>
-        </form>
-        <button class="luminous-button subscription__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <ul class="same-list main-footer__social">
-        <li>
-          <a class="main-footer__social-button main-footer__social-button--vk" href="#">ВКонтакте</a>
+        <p class="destination__video-description">Первый город на&nbsp;планете Марс недалеко от горы Олимп</p>
+        <button class="destination__button-down">Вниз</button>
+      </div>
+    </section>
+    <section class="about-mars">
+      <h2 class="visual-hidden">Факты о Марсе</h2>
+      <ul class="facts">
+        <li class="facts__item">
+          <p class="facts__number">4</p>
+          <p class="facts__text">четвёртая планета по удалённости от Солнца.</p>
         </li>
-        <li>
-          <a class="main-footer__social-button main-footer__social-button--tw" href="#">Твиттер</a>
+        <li class="facts__item">
+          <p class="facts__number">7</p>
+          <p class="facts__text">седьмая по размерам планета Солнечной системы.</p>
         </li>
-        <li>
-          <a class="main-footer__social-button main-footer__social-button--fb" href="#">Фейсбук</a>
+        <li class="facts__item facts__item--tablet">
+          <p class="facts__number">10,7%</p>
+          <p class="facts__text">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле).</p>
         </li>
-        <li>
-          <a class="main-footer__social-button-yt" href="#">YouTube</a>
+        <li class="facts__item facts__item--tablet">
+          <p class="facts__number">2</p>
+          <p class="facts__text">спутника вместо Луны (как картошка, только больше).</p>
+        </li>
+        <li class="facts__item facts__item--desktop">
+          <p class="facts__number">21 км</p>
+          <p class="facts__text">высота самой высокой горы Марса.</p>
+        </li>
+        <li class="facts__item facts__item--desktop">
+          <p class="facts__number">+20</p>
+          <p class="facts__text">максимальная температура на поверхности.</p>
         </li>
       </ul>
-      <a class="main-footer__link" href="#">Подробнее о проекте</a>
-      <a class="main-footer__logo" href="index.html">
-        <img class="main-footer__logo-image" src="img/logo-small.svg" width="114" height="32" alt="Маленький логотип проекта Пантеон">
-      </a>
-    </footer>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+    </section>
+    <section class="information">
+      <h2 class="title red-title information__title">Марс. Вспомнить всё</h2>
+      <div class="information__paper paper">
+        <h3 class="paper__title">Что такое Марс?</h3>
+        <p class="text paper__text">
+          Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной
+          планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.
+        </p>
+        <p class="text paper__text">
+          Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года,
+          пылевые бури, сильная эррозия почв.
+        </p>
+      </div>
+      <div class="information__paper paper">
+        <h3 class="paper__title">Где это? Как туда доехать??</h3>
+        <p class="text paper__text">
+          Расстояние до Марса — почти 56 миллионов километров.
+        </p>
+        <p class="text paper__text">
+          Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.
+        </p>
+      </div>
+    </section>
+    <section class="development">
+      <div class="development__wrapper-mask">
+        <h2 class="title red-title development__title">От идеи до реализации</h2>
+        <div class="development__paper paper">
+          <h3 class="paper__title">Илон Маск. Гений или безумец?</h3>
+          <p class="text paper__text">
+            Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний
+            SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию
+            своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.
+          </p>
+          <div class="development__photo"></div>
+          <p class="text paper__text paper__text--red">
+            Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на
+            Марс, должен иметь такую возможность
+          </p>
+          <p class="text paper__text">
+            — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал
+            необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать
+            «космическим видом».
+            Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым
+            шагом для человечества в освоении Марса.
+          </p>
+        </div>
+      </div>
+      <div class="development__wrapper-cost">
+        <div class="development__photo"></div>
+        <div class="development__paper paper">
+          <h3 class="white-title paper__title">Стоимость перелёта</h3>
+          <p>
+            Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
+            Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
+          </p>
+        </div>
+        <p class="development__money">$500 k</p>
+        <p class="development__on-mars">и ты на Марсе!</p>
+        <a class="link luminous-button development__button" href="#">Я готов лететь!</a>
+      </div>
+    </section>
+    <section class="questions">
+      <h2 class="title questions__title">Подводные камни в масштабах космоса</h2>
+      <picture>
+        <img class="questions__video-picture" src="#" alt="Видео про обустройство и жизнь на Марсе">
+      </picture>
+      <ul class="same-list questions__checkbox">
+        <li class="questions__item">
+          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="survive" id="survive" checked>
+          <label class="questions__label" for="survive">Жить или выживать?</label>
+          <p class="questions__text">
+            Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?
+          </p>
+          <p class="questions__text">
+            Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а
+            минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются
+            пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
+          </p>
+          <p class="questions__text">
+            На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном
+            пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью
+            создать новую цивилизацию.
+          </p>
+        </li>
+        <li class="questions__item">
+          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="technology" id="technology">
+          <label class="questions__label" for="technology">Готовы ли технологии?</label>
+          <p class="questions__text">
+            Конечно
+          </p>
+        </li>
+        <li class="questions__item">
+          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="fantastic" id="fantastic">
+          <label class="questions__label" for="fantastic">Путешествие на грани фантастики</label>
+          <p class="questions__text">
+            Наши бабушки и дедушки могли лишь фантазировать на тему полетов на Марс. А мы осуществляем это!
+          </p>
+        </li>
+        <li class="questions__item">
+          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="live" id="live">
+          <label class="questions__label" for="live">Жизнь на Марсе</label>
+          <p class="questions__text">
+            Будет сложно, но мы справимся!
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="colony">
+      <h2 class="title red-title colony__title">Организация жизни в колонии</h2>
+      <ul class="same-list">
+        <li class="colony__item">
+          <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="residence" value="residence"
+            checked>
+          <label class="colony__label" for="residence">Проживание</label>
+          <div class="colony__residence-photo"></div>
+          <div class="paper colony__paper">
+            <h3 class="paper__title">Проживание</h3>
+            <p class="text paper__text">
+              В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для
+              выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ,
+              приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.
+            </p>
+          </div>
+          <a class="link colony__button" href="#">Подробнее</a>
+        </li>
+        <li class="colony__item">
+          <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="research-centers"
+            value="research-centers">
+          <label class="colony__label" for="research-centers">Исследовательские центры</label>
+          <div class="colony__research-centers-photo"></div>
+          <div class="paper colony__paper">
+            <h3 class="paper__title">Исследовательские центры</h3>
+            <p class="text paper__text">
+              Статья в процессе написания
+            </p>
+          </div>
+          <a class="link colony__button" href="#">Подробнее</a>
+        </li>
+        <li class="colony__item">
+          <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="study" value="study">
+          <label class="colony__label" for="study">Исследования Марса</label>
+          <div class="colony__study-photo"></div>
+          <div class="paper colony__paper">
+            <h3 class="paper__title">Исследования Марса</h3>
+            <p class="text paper__text">
+              Обнаружение на Земле метеоритов марсианского происхождения позволило исследовать химический состав
+              поверхности планеты. В настоящее время Марс по-прежнему находится под наблюдением наземных телескопов и
+              радиотелескопов, позволяющих исследовать поверхность планеты в широком диапазоне электромагнитных волн.
+              Дальнейший прогресс в исследовании Марса связан с продолжением исследования планеты дистанционно
+              управляемыми космическими аппаратами и осуществлением пилотируемого полёта на Марс.
+            </p>
+          </div>
+          <a class="link colony__button" href="#">Подробнее</a>
+        </li>
+        <li class="colony__item">
+          <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="photo" value="photo">
+          <label class="colony__label" for="photo">Фотографии</label>
+          <div class="colony__photo-photo"></div>
+          <div class="paper colony__paper">
+            <h3 class="paper__title">Фотографии</h3>
+            <p class="text paper__text">
+              У Вас будет огромное количество уникальных фотографий.
+            </p>
+          </div>
+          <a class="link colony__button" href="#">Подробнее</a>
+        </li>
+        <li class="colony__item">
+          <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="plants" value="plants">
+          <label class="colony__label" for="plants">Выращивание растений</label>
+          <div class="colony__plants-photo"></div>
+          <div class="paper colony__paper">
+            <h3 class="paper__title">Выращивание растений</h3>
+            <p class="text paper__text">
+              Вы не будете скучать по своей даче, так как для того, чтобы выжить Вам нужно будет выращивать растения,
+              которые будут обеспечивать Вашу жизнь.
+            </p>
+          </div>
+          <a class="link colony__button" href="#">Подробнее</a>
+        </li>
+      </ul>
+    </section>
+    <section class="flight-information">
+      <h2 class="title flight-information__title">Деньги приготовил. Когда вылетаем?</h2>
+      <p class="text flight-information__text">
+        Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью
+        тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и,
+        вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.
+      </p>
+      <p class="text flight-information__text">
+        Для всех желающих открыты курсы подготовки.
+      </p>
+      <p class="text flight-information__text">
+        За 40-100 ближайших лет на Марс планируется доставить до 1 млн.
+      </p>
+      <a class="flight-information__link" href="#">Критерии отбора</a>
+    </section>
+    <section class="subscription">
+      <h3 class="title white-title">Будь в курсе новостей</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="subscription__row">
+          <label class="visual-hidden" for="name">Имя</label>
+          <input class="subscription__form-field" id="name" type="text" name="name" placeholder="Имя">
+        </p>
+        <p class="subscription__row">
+          <label class="visual-hidden" for="email">Электронная почта</label>
+          <input class="subscription__form-field" id="email" type="email" name="email" placeholder="E-mail">
+        </p>
+      </form>
+      <button class="luminous-button subscription__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="same-list main-footer__social">
+      <li>
+        <a class="main-footer__social-button main-footer__social-button--vk" href="#">ВКонтакте</a>
+      </li>
+      <li>
+        <a class="main-footer__social-button main-footer__social-button--tw" href="#">Твиттер</a>
+      </li>
+      <li>
+        <a class="main-footer__social-button main-footer__social-button--fb" href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a class="main-footer__social-button-yt" href="#">YouTube</a>
+      </li>
+    </ul>
+    <a class="main-footer__link" href="#">Подробнее о проекте</a>
+    <a class="main-footer__logo" href="index.html">
+      <img class="main-footer__logo-image" src="img/logo-small.svg" width="114" height="32" alt="Маленький логотип проекта Пантеон">
+    </a>
+  </footer>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
 </html>

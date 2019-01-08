@@ -1,0 +1,64 @@
+.sandwich-button {
+  width: 50px;
+  height: 35px;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 1px;
+  cursor: pointer;
+  
+  &:hover > .sandwich-button__main-line::before,
+  &:hover > .sandwich-button__main-line::after {
+    width: 47px;
+  }
+
+  &:focus > .sandwich-button__main-line {
+    width: 0;
+  }
+
+  &:focus > .sandwich-button__main-line::before,
+  &:focus > .sandwich-button__main-line::after {
+    width: 30px;
+    transition-property: transform;
+  }
+
+  &:focus > .sandwich-button__main-line::before {
+    transform: translate(8px, 8px) rotate(45deg);
+  }
+
+  &:focus > .sandwich-button__main-line::after {
+    transform: translate(8px, -8px) rotate(-45deg);
+  }
+}
+
+.sandwich-button__main-line {
+  position: relative;
+  display: block;
+  width: 47px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    transition-duration: 0.3s;
+    transition-property: width;
+    content: "";
+  }
+
+  &::before {
+    top: -8px;
+    width: 29px;
+  }
+
+  &::after {
+    bottom: -8px;
+    width: 22px;
+  }
+}
