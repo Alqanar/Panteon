@@ -3,61 +3,70 @@
   margin: 0 auto;
 }
 
-@mixin content-tablet {
-  width: $tablet-width;
-  margin: 0 auto;
-}
-
-@mixin content-desktop {
-  width: $desktop-width;
-  margin: 0 auto;
-}
-
-@mixin button {
-  padding: 0;
-  border: none;
-  cursor: pointer;
-}
-
 @mixin content-margin {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@mixin margin-tablet {
-  padding-left: 30px;
-  padding-right: 30px;
+// @mixin content-tablet {
+//   width: $tablet-width;
+//   margin: 0 auto;
+// }
+
+// @mixin content-desktop {
+//   width: $desktop-width;
+//   margin: 0 auto;
+// }
+
+// @mixin button {
+//   padding: 0;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// @mixin content-margin {
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
+
+// @mixin margin-tablet {
+//   padding-left: 30px;
+//   padding-right: 30px;
+// }
+
+// @mixin margin-desktop {
+//   padding-left: 40px;
+//   padding-right: 40px;
+// }
+
+// @mixin margin-form {
+//   padding-left: 70px;
+//   padding-right: 65px;
+// }
+
+// @mixin centering-device {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+@mixin proxima {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 300;
 }
 
-@mixin margin-desktop {
-  padding-left: 40px;
-  padding-right: 40px;
+@mixin proxima-bold {
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 700;
 }
 
-@mixin margin-form {
-  padding-left: 70px;
-  padding-right: 65px;
+@mixin proxima-black {
+  margin: 0;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 900;
 }
 
-@mixin centering-device {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@mixin Oswald {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-}
-
-@mixin Oswald-uppercase {
-  @include Oswald;
+@mixin proxima-uppercase {
+  @include proxima;
   text-transform: uppercase;
-}
-
-@mixin Arial($f-size: 14px, $l-height: 18px) {
-  font-family: "Arial", sans-serif;
-  font-size: $f-size;
-  line-height: $l-height;
-  color: $arial-text;
-  font-weight: 400;
 }

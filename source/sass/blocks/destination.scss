@@ -1,0 +1,116 @@
+.destination {
+  @include proxima;
+  color: $white-color;
+  background-color: $crimson-color;
+  background-image: url("../img/Background1.png"), linear-gradient(to right, $crimson-dark 50%, $crimson-light 50%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: -64px;
+}
+
+.destination-wrapper {
+  @include content;
+  @include content-margin;
+  @include proxima;
+  font-size: 14px;
+  padding-bottom: 26px;
+}
+
+.destination__wrapper-title {
+  @include proxima-uppercase;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap-reverse;
+  padding-top: 132px;
+}
+
+.destination__title {
+  @include proxima-black;
+  font-size: 72px;
+  line-height: 20px;
+  padding-top: 16px;
+}
+
+.destination__text {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.destination__wrapper-video-picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 63px;
+  
+  &::before {
+    position: absolute;
+    top: 45px;
+    left: 119px;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.destination__video-picture {
+  width: 214px;
+  height: 139px;
+  box-shadow: 0px 25px 38px 0px rgba(0, 0, 0, 0.3);
+}
+
+.destination__video-description {
+  position: absolute;
+  top: 388px;
+  left: 206px;
+  width: 26%;
+  line-height: 17px;
+  color: $pink-color;
+}
+
+.destination__button-down {
+  position: relative;
+  display: flex;
+  width: 59px;
+  height: 59px;
+  font-size: 0;
+  background-color: $red-opacity;
+  border: none;
+  border-radius: 50%;
+  margin-top: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    width: 12px;
+    height: 12px;
+    // border-bottom: 2px solid $white-color;
+    content: "";
+  }
+
+  &::before {
+    border-bottom: 2px solid $white-color;
+    border-left: 2px solid $white-color;
+    transform: translateX(18px) rotate(-45deg);
+  }
+
+  &::after {
+    border-top: 2px solid $white-color;
+    transform: translate(13px, -1px) rotate(-45deg);
+  }
+
+  &:hover::before {
+    transform: translateX(18px) rotate(-45deg) scale(1.3);
+  }
+
+  &:hover::after {
+    transform: translate(15px, -1px) rotate(-45deg) scale(1.3);
+  }
+
+  &:focus {
+    background-color: $red-color;
+  }
+}
