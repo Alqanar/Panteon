@@ -1,0 +1,43 @@
+.facts {
+  @include content;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-top: 42px;
+  justify-content: space-between;
+}
+
+.facts__item {
+  width: 125px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  &:first-child::after {
+    position: absolute;
+    top: 65px;
+    left: 167px;
+    width: 1px;
+    height: 50px;
+    background-color: $pink-border;
+    content: "";
+  }
+}
+
+.facts__number {
+  @include proxima-bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: $red-color;
+}
+
+.facts__text {
+  @include proxima;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 19px;
+}
