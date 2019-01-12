@@ -1,0 +1,19 @@
+.paper {
+  padding-top: 23px;
+  margin-bottom: 19px;
+}
+
+.paper__title {
+  @include proxima-bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.paper__text {
+  @include proxima;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 12px;
+}
