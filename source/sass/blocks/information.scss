@@ -1,0 +1,33 @@
+.information {
+  background-image: url("../img/cube.png");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  padding-bottom: 42px;
+}
+
+.information__wrapper {
+  @include content;
+  @include content-margin;
+  background-image: url("../img/planets-and-ship(mobile).png");
+  background-repeat: no-repeat;
+  background-size: 320px 1288px;
+  padding-top: 40px;
+  padding-bottom: 170px;
+  background-position-y: bottom;
+}
+
+.information__paper {
+  padding-top: 23px;
+  margin-bottom: 19px;
+}
+
+.information__paper-title {
+  margin-bottom: 11px;
+}
+
+.information__paper-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 12px;
+}

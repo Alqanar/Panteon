@@ -1,3 +1,16 @@
 .title {
   @include proxima-bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: $white-color;
+
+  &--red {
+    color: $red-color;
+  }
+}
+
+.title-paper {
+  @include proxima-bold;
+  font-size: 24px;
+  line-height: 24px;
 }
