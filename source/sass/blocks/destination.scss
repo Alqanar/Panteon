@@ -1,11 +1,14 @@
 .destination {
-  @include proxima;
   color: $white-color;
   background-color: $crimson-color;
-  background-image: url("../img/Background1.png"), linear-gradient(to right, $crimson-dark 0%, $crimson-light 100%);
+  background-image: 
+    url("../img/Background1.png"), 
+    linear-gradient(to right, $crimson-dark 0%, $crimson-light 100%);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px 579px, auto auto;
+  background-size: 
+    320px 579px, 
+    auto auto;
   min-width: 320px;
   margin-top: -64px;
 }
@@ -13,7 +16,6 @@
 .destination-wrapper {
   @include content;
   @include content-margin;
-  @include proxima;
   position: relative;
   font-size: 14px;
   padding-bottom: 26px;
@@ -90,7 +92,6 @@
   &::after {
     width: 12px;
     height: 12px;
-    // border-bottom: 2px solid $white-color;
     content: "";
   }
 

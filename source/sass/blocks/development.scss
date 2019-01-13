@@ -1,0 +1,126 @@
+.development {
+  background-image: url("../img/cube.png");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+}
+
+.development__paper-title {
+  padding-bottom: 17px;
+}
+
+.development__mask {
+  @include content;
+  @include content-margin;
+  padding-top: 45px;
+  padding-bottom: 42px;
+}
+
+.development__paper {
+  padding-top: 30px;
+}
+
+.development__paper-text {
+  margin: 0;
+  padding-top: 13px;
+
+  &--red {
+    position: relative;
+    font-size: 18px;
+    color: $red-color;
+    padding-top: 57px;
+    padding-bottom: 22px;
+
+    &::before {
+      position: absolute;
+      top: 47px;
+      left: -13px;
+      font-size: 60px;
+      content: "\201C";
+    }
+  }
+
+  &--bold {
+    @include proxima-bold;
+  }
+}
+
+.development__photo-mask {
+  position: relative;
+  width: 165px;
+  height: 189px;
+  border: 10px solid $red-color;
+  margin-top: 32px;
+  margin-left: 77px;
+
+  &::after {
+    position: absolute;
+    top: 23px;
+    left: -45px;
+    width: 165px;
+    height: 189px;
+    background-image: url("../img/mask-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 165px 189px;
+    background-size: $wrapper-mask;
+    content: "";
+  }
+}
+
+.development__photo-rocket {
+  @include content;
+  @include content-margin;
+  position: relative;
+  z-index: 3;
+  width: 289px;
+  height: 289px;
+  background-image: url("../img/rocket.jpg");
+  background-repeat: no-repeat;
+  background-size: 289px 289px;
+}
+
+.development__wrapper-cost {
+  position: relative;
+  z-index: 1;
+  color: $white-color;
+  background-color: $crimson-color;
+  background-image: 
+    url("../img/substrate-rocket.png"), 
+    linear-gradient(to right, $violet-dark 0%, $violet-light 100%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 
+    320px 650px, 
+    auto auto;
+  min-width: 320px;
+  margin-top: -143px;
+}
+
+.development__cost {
+  @include content;
+  @include content-margin;
+  padding-top: 150px;
+  padding-bottom: 54px;
+}
+
+.development__cost-title {
+  padding-bottom: 9px;
+}
+
+.development__money {
+  margin: 0;
+  font-size: 60px;
+  padding-top: 54px;
+}
+
+.development__on-mars {
+  width: 220px;
+  margin: 0;
+  font-size: 24px;
+  border-bottom: 1px solid $white-color;
+  padding-bottom: 4px;
+  padding-top: 42px;
+}
+
+.development__button {
+  margin-top: 44px;
+}

@@ -8,3 +8,9 @@
     color: $red-color;
   }
 }
+
+.title-paper {
+  @include proxima-bold;
+  font-size: 24px;
+  line-height: 24px;
+}

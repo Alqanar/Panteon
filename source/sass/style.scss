@@ -1,9 +1,9 @@
 @import "global/fonts";
 @import "global/normalize";
+@import "global/mixins";
 @import "global/global";
 @import "global/variables";
 @import "global/color";
-@import "global/mixins";
 @import "blocks/main-header";
 @import "blocks/destination";
 @import "blocks/title";
@@ -13,5 +13,6 @@
 @import "blocks/about-mars";
 @import "blocks/facts";
 @import "blocks/information";
-@import "blocks/paper";
-
+@import "blocks/development";
+@import "blocks/link";
+@import "blocks/luminous-button";

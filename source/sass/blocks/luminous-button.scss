@@ -1,0 +1,22 @@
+.luminous-button {
+  display: flex;
+  width: auto;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  color: $pink-bright;
+  background-color: $white-color;
+  border-radius: 28px;
+  font-weight: 700;
+  min-height: 57px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px $white-color;
+
+  &:hover {
+    box-shadow: 0 0 60px $white-color;
+  }
+
+  &:focus {
+    box-shadow: inset 0 4px 10px $pink-bright;
+  }
+}
