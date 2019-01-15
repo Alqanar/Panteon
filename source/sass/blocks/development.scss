@@ -58,10 +58,10 @@
     left: -45px;
     width: 165px;
     height: 189px;
+    background-color: $wrapper-mask;
     background-image: url("../img/mask-photo.jpg");
     background-repeat: no-repeat;
     background-size: 165px 189px;
-    background-size: $wrapper-mask;
     content: "";
   }
 }
