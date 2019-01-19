@@ -141,50 +141,65 @@
       </div>
     </section>
     <section class="questions">
-      <h2 class="title questions__title">Подводные камни в масштабах космоса</h2>
-      <picture>
-        <img class="questions__video-picture" src="#" alt="Видео про обустройство и жизнь на Марсе">
-      </picture>
-      <ul class="same-list questions__checkbox">
-        <li class="questions__item">
-          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="survive" id="survive" checked>
-          <label class="questions__label" for="survive">Жить или выживать?</label>
-          <p class="questions__text">
-            Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?
-          </p>
-          <p class="questions__text">
-            Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а
-            минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются
-            пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
-          </p>
-          <p class="questions__text">
-            На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном
-            пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью
-            создать новую цивилизацию.
-          </p>
-        </li>
-        <li class="questions__item">
-          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="technology" id="technology">
-          <label class="questions__label" for="technology">Готовы ли технологии?</label>
-          <p class="questions__text">
-            Конечно
-          </p>
-        </li>
-        <li class="questions__item">
-          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="fantastic" id="fantastic">
-          <label class="questions__label" for="fantastic">Путешествие на грани фантастики</label>
-          <p class="questions__text">
-            Наши бабушки и дедушки могли лишь фантазировать на тему полетов на Марс. А мы осуществляем это!
-          </p>
-        </li>
-        <li class="questions__item">
-          <input class="visual-hidden questions__cell-checkbox" type="checkbox" name="live" id="live">
-          <label class="questions__label" for="live">Жизнь на Марсе</label>
-          <p class="questions__text">
-            Будет сложно, но мы справимся!
-          </p>
-        </li>
-      </ul>
+      <div class="questions__wrapper">
+        <h2 class="title questions__title">Подводные камни в&nbsp;масштабах космоса</h2>
+        <div class="questions__wrapper-video-picture">
+          <picture>
+            <img class="questions__video-picture" src="img/life-on-mars.png" alt="Видео про обустройство и жизнь на Марсе">
+          </picture>
+        </div>
+        <ul class="same-list">
+          <li class="questions__item">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="survive" value="survive"
+              checked>
+            <label class="questions__label" for="survive">Жить или выживать?</label>
+            <div class="questions__wrapper-text">
+              <p class="questions__text">
+                Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?
+              </p>
+              <p class="questions__text">
+                Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых
+                газов,
+                а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете
+                случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.
+              </p>
+              <p class="questions__text">
+                На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация
+                при&nbsp;длительном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет
+                в
+                один конец с целью создать новую цивилизацию.
+              </p>
+            </div>
+          </li>
+          <li class="questions__item">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="technology" value="technology">
+            <label class="questions__label" for="technology">Готовы ли технологии?</label>
+            <div class="questions__wrapper-text">
+              <p class="questions__text">
+                Конечно
+              </p>
+            </div>
+          </li>
+          <li class="questions__item">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="fantastic" value="fantastic">
+            <label class="questions__label" for="fantastic">Путешествие на грани фантастики</label>
+            <div class="questions__wrapper-text">
+              <p class="questions__text">
+                Наши бабушки и дедушки могли лишь фантазировать на тему полетов на Марс. А мы осуществляем это!
+              </p>
+            </div>
+          </li>
+          <li class="questions__item">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="live" value="live">
+            <label class="questions__label" for="live">Жизнь на Марсе</label>
+            <div class="questions__wrapper-text">
+              <p class="questions__text">
+                Будет сложно, но мы справимся!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="colony">
       <h2 class="title red-title colony__title">Организация жизни в колонии</h2>
