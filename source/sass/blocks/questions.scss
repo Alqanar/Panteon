@@ -12,6 +12,7 @@
 .questions__wrapper {
   @include content;
   @include content-margin;
+  overflow: hidden;
   padding-top: 58px;
   padding-bottom: 52px;
 }
@@ -41,46 +42,53 @@
   @include proxima-bold;
   font-size: 18px;
   color: $white-color;
+
+  &::after {
+    transform: rotate(-135deg);
+    border-color: $white-color;
+  }
 }
 
 .questions__cell-checkbox:checked ~ .questions__wrapper-text {
-  // opacity: 1;
-  transform: scaleY(1);
+  transform: translateX(0) scaleY(1);
   padding-top: 22px;
-  padding-bottom: 8px;
-  // visibility: visible;
+  padding-bottom: 9px;
   max-height: 5000px;
 }
 
 .questions__cell-checkbox:checked ~ .questions__wrapper-text .questions__text {
-  // display: block;
-  // font-size: 16px;
-  // line-height: 24px;
   padding-top: 11px;
 }
 
 .questions__label {
+  position: relative;
+  display: flex;
   color: $blue-light;
   padding-right: 33px;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    right: 4px;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid $blue-light;
+    border-bottom: 2px solid $blue-light;
+    transform: rotate(-45deg);
+    content: "";
+    align-self: center;
+  }
 }
 
 .questions__wrapper-text {
   overflow: hidden;
-  // opacity: 0;
-  transform: scaleY(0);
+  transform: translateX(-320px) scaleY(0);
   transition-duration: 0.8s;
   transition-property: all;
-  // visibility: hidden;
   max-height: 0;
 }
 
 .questions__text {
-  // overflow: hidden;
-  // display: none;
   margin: 0;
-  // font-size: 0;
-  // line-height: 0;
-  // transition-delay: 0.5s;
-  // padding-top: 0;
-  // padding-top: 11px;
 }
