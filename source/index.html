@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <!-- <div style="display: none">
-      <include src="img/sprite.svg"></include>
-    </div> -->
+  <div style="display: none">
+    <include src="img/sprite.svg"></include>
+  </div>
   <header class="main-header">
     <span class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo.png" width="143" height="37" alt="Логотип проекта Пантеон">
@@ -70,28 +70,26 @@
       </ul>
     </section>
     <section class="information">
-      <div class="information__wrapper">
-        <h2 class="title title--red">Марс. Вспомнить всё</h2>
-        <div class="information__paper">
-          <h3 class="title-paper information__paper-title">Что такое Марс?</h3>
-          <p class="information__paper-text">
-            Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной
-            планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.
-          </p>
-          <p class="information__paper-text">
-            Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года,
-            пылевые бури, сильная эррозия почв.
-          </p>
-        </div>
-        <div class="information__paper paper">
-          <h3 class="title-paper information__paper-title">Где это? Как туда доехать?</h3>
-          <p class="information__paper-text">
-            Расстояние до Марса — почти 56 миллионов километров.
-          </p>
-          <p class="information__paper-text">
-            Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7-8 месяцев.
-          </p>
-        </div>
+      <h2 class="title title--red">Марс. Вспомнить всё</h2>
+      <div class="information__paper">
+        <h3 class="title-paper information__paper-title">Что такое Марс?</h3>
+        <p class="information__paper-text">
+          Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной
+          планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.
+        </p>
+        <p class="information__paper-text">
+          Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года,
+          пылевые бури, сильная эррозия почв.
+        </p>
+      </div>
+      <div class="information__paper paper">
+        <h3 class="title-paper information__paper-title">Где это? Как туда доехать?</h3>
+        <p class="information__paper-text">
+          Расстояние до Марса — почти 56 миллионов километров.
+        </p>
+        <p class="information__paper-text">
+          Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7-8 месяцев.
+        </p>
       </div>
     </section>
     <section class="development">
@@ -202,12 +200,16 @@
       </div>
     </section>
     <section class="colony">
-      <h2 class="title red-title colony__title">Организация жизни в колонии</h2>
-      <ul class="same-list">
+      <h2 class="title title--red colony__title">Организация жизни&nbsp;в&nbsp;колонии</h2>
+      <ul class="same-list colony__list">
         <li class="colony__item">
           <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="residence" value="residence"
             checked>
-          <label class="colony__label" for="residence">Проживание</label>
+          <label class="colony__label" for="residence" aria-label="Проживание">
+            <svg class="colony__teacup" width="30" height="23">
+              <use xlink:href="#sprite-teacup"></use>
+            </svg>
+          </label>
           <div class="colony__residence-photo"></div>
           <div class="paper colony__paper">
             <h3 class="paper__title">Проживание</h3>
@@ -222,7 +224,11 @@
         <li class="colony__item">
           <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="research-centers"
             value="research-centers">
-          <label class="colony__label" for="research-centers">Исследовательские центры</label>
+          <label class="colony__label" for="research-centers" aria-label="Исследовательские центры">
+            <svg class="colony__helmet" width="26" height="19">
+              <use xlink:href="#sprite-helmet"></use>
+            </svg>
+          </label>
           <div class="colony__research-centers-photo"></div>
           <div class="paper colony__paper">
             <h3 class="paper__title">Исследовательские центры</h3>
@@ -234,7 +240,11 @@
         </li>
         <li class="colony__item">
           <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="study" value="study">
-          <label class="colony__label" for="study">Исследования Марса</label>
+          <label class="colony__label" for="study" aria-label="Исследования Марса">
+            <svg class="colony__microscope" width="22" height="31">
+              <use xlink:href="#sprite-microscope"></use>
+            </svg>
+          </label>
           <div class="colony__study-photo"></div>
           <div class="paper colony__paper">
             <h3 class="paper__title">Исследования Марса</h3>
@@ -250,7 +260,11 @@
         </li>
         <li class="colony__item">
           <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="photo" value="photo">
-          <label class="colony__label" for="photo">Фотографии</label>
+          <label class="colony__label" for="photo" aria-label="Фотографии">
+            <svg class="colony__photo" width="25" height="21">
+              <use xlink:href="#sprite-photo"></use>
+            </svg>
+          </label>
           <div class="colony__photo-photo"></div>
           <div class="paper colony__paper">
             <h3 class="paper__title">Фотографии</h3>
@@ -262,7 +276,11 @@
         </li>
         <li class="colony__item">
           <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="plants" value="plants">
-          <label class="colony__label" for="plants">Выращивание растений</label>
+          <label class="colony__label" for="plants" aria-label="Выращивание растений">
+            <svg class="colony__leaves" width="26" height="27">
+              <use xlink:href="#sprite-leaves"></use>
+            </svg>
+          </label>
           <div class="colony__plants-photo"></div>
           <div class="paper colony__paper">
             <h3 class="paper__title">Выращивание растений</h3>

@@ -1,18 +1,12 @@
-.development {
-  background-image: url("../img/cube.png");
-  background-repeat: repeat;
-  background-size: 50px 50px;
+.development__mask {
+  @include content;
+  @include content-margin;
+  padding-top: 87px;
+  padding-bottom: 42px;
 }
 
 .development__paper-title {
   padding-bottom: 17px;
-}
-
-.development__mask {
-  @include content;
-  @include content-margin;
-  padding-top: 45px;
-  padding-bottom: 42px;
 }
 
 .development__paper {

@@ -1,11 +1,4 @@
 .information {
-  background-image: url("../img/cube.png");
-  background-repeat: repeat;
-  background-size: 50px 50px;
-  padding-bottom: 42px;
-}
-
-.information__wrapper {
   @include content;
   @include content-margin;
   background-image: url("../img/planets-and-ship(mobile).png");
