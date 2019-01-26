@@ -1,0 +1,43 @@
+.subscription {
+  color: $white-color;
+  background-color: $purple-color;
+  background-image: url("../img/substrate-subscription.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 397px;
+  min-width: 320px;
+}
+
+.subscription__wrapper {
+  @include content;
+  @include content-margin;
+  padding-top: 55px;
+  padding-bottom: 66px;
+}
+
+.subscriprion__text {
+  @include proxima-bold;
+  font-size: 23px;
+  padding-left: 17px;
+}
+
+.subscription__row {
+  margin: 32px 26px 0 16px;
+  border-bottom: 1px solid $white-color;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.subscription__form-field {
+  width: 100%;
+  line-height: 34px;
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.subscription__button {
+  width: 255px;
+  margin: 58px auto 0 auto;
+}

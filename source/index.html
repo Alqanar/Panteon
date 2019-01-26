@@ -210,7 +210,7 @@
               <svg class="colony__teacup" width="30" height="23">
                 <use xlink:href="#sprite-teacup"></use>
               </svg>
-              <span class="colony__name-paragraph">Проживание</span>>
+              <span class="colony__name-paragraph">Проживание</span>
             </label>
             <div class="colony__wrapper-paragraph-content">
               <span class="colony__photo colony__photo--residence"></span>
@@ -233,7 +233,7 @@
               <svg class="colony__helmet" width="33" height="19">
                 <use xlink:href="#sprite-helmet"></use>
               </svg>
-              <span class="colony__name-paragraph">Исследовательские центры</span>>
+              <span class="colony__name-paragraph">Исследовательские центры</span>
             </label>
             <div class="colony__wrapper-paragraph-content">
               <span class="colony__photo colony__photo--research-centers"></span>
@@ -294,7 +294,7 @@
               <svg class="colony__leaves" width="28" height="27">
                 <use xlink:href="#sprite-leaves"></use>
               </svg>
-              <span class="colony__name-paragraph">Выращивание растений</span>>
+              <span class="colony__name-paragraph">Выращивание растений</span>
             </label>
             <div class="colony__wrapper-paragraph-content">
               <span class="colony__photo colony__photo--plants"></span>
@@ -310,33 +310,38 @@
       </ul>
     </section>
     <section class="flight-information">
-      <h2 class="title flight-information__title">Деньги приготовил. Когда вылетаем?</h2>
-      <p class="text flight-information__text">
-        Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью
-        тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и,
-        вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.
-      </p>
-      <p class="text flight-information__text">
-        Для всех желающих открыты курсы подготовки.
-      </p>
-      <p class="text flight-information__text">
-        За 40-100 ближайших лет на Марс планируется доставить до 1 млн.
-      </p>
-      <a class="flight-information__link" href="#">Критерии отбора</a>
+      <div class="flight-information__wrapper">
+        <h2 class="title">Деньги приготовил. Когда&nbsp;вылетаем?</h2>
+        <p class="flight-information__text">
+          Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью
+          тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и,
+          вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.
+        </p>
+        <p class="flight-information__text">
+          Для всех желающих открыты курсы подготовки.
+        </p>
+        <p class="flight-information__text">
+          За 40-100 ближайших лет на Марс планируется доставить до 1 млн.
+        </p>
+        <a class="link flight-information__link" href="#">Критерии отбора</a>
+      </div>
     </section>
     <section class="subscription">
-      <h3 class="title white-title">Будь в курсе новостей</h3>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p class="subscription__row">
-          <label class="visual-hidden" for="name">Имя</label>
-          <input class="subscription__form-field" id="name" type="text" name="name" placeholder="Имя">
-        </p>
-        <p class="subscription__row">
-          <label class="visual-hidden" for="email">Электронная почта</label>
-          <input class="subscription__form-field" id="email" type="email" name="email" placeholder="E-mail">
-        </p>
-      </form>
-      <button class="luminous-button subscription__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
+      <div class="subscription__wrapper">
+        <h3 class="visual-hidden">Подпишись на нашу рассылку</h3>
+        <p class="subscriprion__text">Будь в курсе новостей</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="subscription__row">
+            <label class="visual-hidden" for="name">Имя</label>
+            <input class="subscription__form-field" id="name" type="text" name="name" value="Имя">
+          </p>
+          <p class="subscription__row">
+            <label class="visual-hidden" for="email">Электронная почта</label>
+            <input class="subscription__form-field" id="email" type="email" name="email" value="E-mail">
+          </p>
+        </form>
+        <button class="luminous-button subscription__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
