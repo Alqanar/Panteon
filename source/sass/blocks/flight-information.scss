@@ -1,0 +1,49 @@
+.flight-information {
+  color: $white-color;
+  background-image:
+    url("../img/substrate-information.jpg"),
+    linear-gradient(to right, $purple-dark 0%, $purple-color 100%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:
+    320px 1302px,
+    auto auto;
+  min-width: 320px;
+}
+
+.flight-information__wrapper {
+  @include content;
+  @include content-margin;
+  padding-top: 44px;
+  padding-bottom: 46px;
+}
+
+.flight-information__text {
+  margin: 0;
+  padding-top: 24px;
+
+  &:first-of-type {
+    padding-top: 26px;
+  }
+}
+
+.flight-information__link {
+  display: inline-block;
+  line-height: 20px;
+  color: $white-color;
+  border-bottom: 1px solid $white-color;
+  transition-duration: 0.2s;
+  transition-property: transform, text-shadow;
+  padding-top: 21px;
+
+  &:hover {
+    transform: translateX(5px) scale(1.07);
+    text-shadow: $white-color 0 0 6px;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    transform: translateX(-5px) scale(0.93);
+    text-shadow: none;
+  }
+}
