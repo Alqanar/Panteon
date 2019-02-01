@@ -1,0 +1,72 @@
+.main-footer {
+  background-image:
+    url("../img/substrate-information.jpg"),
+    linear-gradient(to right, $purple-dark 0%, $purple-light 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:
+    320px 1302px,
+    auto auto;
+  box-shadow: inset 0 -160px 260px 0 $footer-shadow;
+  min-width: 320px;
+}
+
+.main-footer__wrapper {
+  @include content;
+  @include content-margin;
+  padding-bottom: 36px;
+}
+
+.main-footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 54px;
+}
+
+.main-footer__social-button {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  text-indent: -10000px;
+  margin-right: 10px;
+}
+
+.main-footer__social-button--vk {
+  background-image: url("../img/vk.png");
+  margin-left: 8px;
+}
+
+
+.main-footer__social-button--tw {
+  background-image: url("../img/twitter.png");
+}
+
+
+.main-footer__social-button--fb {
+  background-image: url("../img/fb.png");
+}
+
+
+.main-footer__social-button--yt {
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/youtube.png");
+}
+
+.main-footer__link {
+  display: flex;
+  font-size: 14px;
+  color: $white-color;
+  opacity: 0.4;
+  justify-content: center;
+  padding-top: 36px;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-right: 7px;
+}
