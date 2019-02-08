@@ -9,5 +9,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  
+  .main-header {
+    @include tablet-content;
+    @include tablet-margin;
+  }
 }
