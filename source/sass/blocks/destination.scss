@@ -130,10 +130,10 @@
       765px 940px,
       auto auto;
     min-width: 750px;
-    margin-top: -64px;
+    margin-top: -79px;
   }
 
-  .destination-wrapper{
+  .destination-wrapper {
     @include tablet-content;
     @include tablet-margin;
     padding-bottom: 37px;
@@ -159,6 +159,15 @@
     &::before {
       top: 104px;
       left: 253px;
+    }
+
+    &::after {
+      @include proxima;
+      position: absolute;
+      top: 117px;
+      left: 319px;
+      font-size: 16px;
+      content: "Смотреть видео";
     }
   }
 
@@ -188,7 +197,7 @@
     }
 
     &::after {
-      transform: translate(18px,0px) rotate(-45deg);
+      transform: translate(18px, 0) rotate(-45deg);
     }
   }
 }

@@ -18,11 +18,17 @@
   </div>
   <header class="main-header">
     <span class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo.png" width="143" height="37" alt="Логотип проекта Пантеон">
+      <picture>
+        <source media="(min-width: 750px)" srcset="img/logo(tablet).png">
+        <img class="main-header__logo-image" src="img/logo.png" width="143" height="37" alt="Логотип проекта Пантеон">
+      </picture>
     </span>
-    <button class="sandwich-button" type="button">Меню
-      <span class="sandwich-button__main-line"></span>
-    </button>
+    <div class="main-header__menu">
+      <p class="main-header__title-menu">Меню</p>
+      <button class="sandwich-button main-header__sandwich-button" type="button"> Открыть меню
+        <span class="sandwich-button__main-line"></span>
+      </button>
+    </div>
   </header>
   <main class="main-content">
     <section class="destination">
@@ -34,7 +40,8 @@
         <div class="destination__wrapper-video-picture">
           <picture>
             <source media="(min-width: 750px)" srcset="img/first-city(tablet).png 1x">
-            <img class="destination__video-picture" src="img/first-city.png" alt="Видео про первый город на планете Марс">
+            <img class="destination__video-picture" src="img/first-city.png"
+              alt="Видео про первый город на планете Марс">
           </picture>
         </div>
         <p class="destination__video-description">Первый город на&nbsp;планете Марс недалеко от горы Олимп</p>
@@ -144,13 +151,14 @@
         <h2 class="title questions__title">Подводные камни в&nbsp;масштабах космоса</h2>
         <div class="questions__wrapper-video-picture">
           <picture>
-            <img class="questions__video-picture" src="img/life-on-mars.png" alt="Видео про обустройство и жизнь на Марсе">
+            <img class="questions__video-picture" src="img/life-on-mars.png"
+              alt="Видео про обустройство и жизнь на Марсе">
           </picture>
         </div>
         <ul class="same-list">
           <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="survive" value="survive"
-              checked>
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="survive"
+              value="survive" checked>
             <label class="questions__label" for="survive">Жить или выживать?</label>
             <div class="questions__wrapper-text">
               <p class="questions__text">
@@ -171,7 +179,8 @@
             </div>
           </li>
           <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="technology" value="technology">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="technology"
+              value="technology">
             <label class="questions__label" for="technology">Готовы ли технологии?</label>
             <div class="questions__wrapper-text">
               <p class="questions__text">
@@ -180,7 +189,8 @@
             </div>
           </li>
           <li class="questions__item">
-            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="fantastic" value="fantastic">
+            <input class="visual-hidden questions__cell-checkbox" type="radio" name="questions" id="fantastic"
+              value="fantastic">
             <label class="questions__label" for="fantastic">Путешествие на грани фантастики</label>
             <div class="questions__wrapper-text">
               <p class="questions__text">
@@ -205,8 +215,8 @@
       <ul class="same-list">
         <li class="colony__item">
           <div class="colony__wrapper-content">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="residence" value="residence"
-              checked>
+            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="residence"
+              value="residence" checked>
             <label class="colony__label" for="residence" aria-label="Проживание">
               <svg class="colony__teacup" width="30" height="23">
                 <use xlink:href="#sprite-teacup"></use>
@@ -248,7 +258,8 @@
         </li>
         <li class="colony__item">
           <div class="colony__wrapper-content">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="study" value="study">
+            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="study"
+              value="study">
             <label class="colony__label" for="study" aria-label="Исследования Марса">
               <svg class="colony__microscope" width="22" height="31">
                 <use xlink:href="#sprite-microscope"></use>
@@ -271,7 +282,8 @@
         </li>
         <li class="colony__item">
           <div class="colony__wrapper-content">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="photo" value="photo">
+            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="photo"
+              value="photo">
             <label class="colony__label" for="photo" aria-label="Фотографии">
               <svg class="colony__camera" width="25" height="21">
                 <use xlink:href="#sprite-photo"></use>
@@ -290,7 +302,8 @@
         </li>
         <li class="colony__item">
           <div class="colony__wrapper-content">
-            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="plants" value="plants">
+            <input class="visual-hidden colony__cell-radio" type="radio" name="life-organization" id="plants"
+              value="plants">
             <label class="colony__label" for="plants" aria-label="Выращивание растений">
               <svg class="colony__leaves" width="28" height="27">
                 <use xlink:href="#sprite-leaves"></use>
@@ -341,7 +354,8 @@
             <input class="subscription__form-field" id="email" type="email" name="email" value="E-mail">
           </p>
         </form>
-        <button class="luminous-button subscription__button" type="submit" value="Подписаться на рассылку">Подписаться</button>
+        <button class="luminous-button subscription__button" type="submit"
+          value="Подписаться на рассылку">Подписаться</button>
       </div>
     </section>
   </main>
@@ -366,7 +380,8 @@
       </div>
       <div class="main-footer__wrapper-logo">
         <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-image" src="img/logo-small.png" width="114" height="32" alt="Маленький логотип проекта Пантеон">
+          <img class="main-footer__logo-image" src="img/logo-small.png" width="114" height="32"
+            alt="Маленький логотип проекта Пантеон">
         </a>
       </div>
     </div>

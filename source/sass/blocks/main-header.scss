@@ -8,9 +8,39 @@
   padding-top: 20px;
 }
 
+.main-header__menu {
+  display: flex;
+}
+
+.main-header__sandwich-button {
+  margin-top: 1px;
+}
+
+.main-header__title-menu {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
     @include tablet-content;
-    @include tablet-margin;
+    padding: 24px 15px 0 17px;
+  }
+
+  .main-header__logo-image {
+    width: 175px;
+    height: 48px;
+  }
+
+  .main-header__sandwich-button {
+    margin-top: 0;
+  }
+
+  .main-header__title-menu {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    color: $white-color;
+    padding-top: 6px;
+    padding-right: 18px;
   }
 }
