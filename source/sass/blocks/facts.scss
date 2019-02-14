@@ -1,6 +1,5 @@
 .facts {
   @include content;
-  position: relative;
   display: flex;
   margin: 0 auto;
   padding-left: 15px;
@@ -8,6 +7,7 @@
 }
 
 .facts__item {
+  position: relative;
   width: 125px;
 
   &--tablet,
@@ -38,4 +38,34 @@
   font-size: 13px;
   line-height: 18px;
   margin-top: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .facts {
+    @include tablet-content;
+  }
+
+  .facts__item {
+    &--tablet {
+    display: block;
+    }
+
+    &:nth-child(-n+3)::after {
+      position: absolute;
+      top: 23px;
+      left: 167px;
+      width: 1px;
+      height: 50px;
+      background-color: $pink-border;
+      content: "";
+    }
+  }
+
+  .facts__number {
+    font-size: 48px;
+  }
+
+  .facts__text {
+    margin-top: 24px;
+  }
 }

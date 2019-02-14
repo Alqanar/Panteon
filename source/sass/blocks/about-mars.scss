@@ -3,3 +3,9 @@
   padding-top: 42px;
   padding-bottom: 32px;
 }
+
+@media (min-width: $tablet-width) {
+  .about-mars {
+    padding-top: 56px;
+  }
+}
