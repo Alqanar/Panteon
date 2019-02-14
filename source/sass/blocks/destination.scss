@@ -135,7 +135,6 @@
 
   .destination-wrapper {
     @include tablet-content;
-    @include tablet-margin;
     padding-bottom: 37px;
   }
 
@@ -158,14 +157,14 @@
 
     &::before {
       top: 104px;
-      left: 253px;
+      left: 261px;
     }
 
     &::after {
       @include proxima;
       position: absolute;
       top: 117px;
-      left: 319px;
+      left: 328px;
       font-size: 16px;
       content: "Смотреть видео";
     }

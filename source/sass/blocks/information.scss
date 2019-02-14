@@ -24,3 +24,23 @@
   line-height: 24px;
   padding-top: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .information {
+    @include tablet-content;
+    background-image: url("../img/planets-and-ship(tablet).png");
+    background-size: 750px 1774px;
+    padding-top: 54px;
+    padding-bottom: 208px;
+  }
+
+  .information__wrapper-paper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information__paper {
+    width: 48%;
+    padding-top: 51px;
+  }
+}
