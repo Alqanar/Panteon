@@ -5,12 +5,12 @@
   padding-bottom: 42px;
 }
 
-.development__paper-title {
-  padding-bottom: 17px;
+.development__title {
+  padding-bottom: 30px;
 }
 
-.development__paper {
-  padding-top: 30px;
+.development__paper-title {
+  padding-bottom: 17px;
 }
 
 .development__paper-text {
@@ -60,13 +60,17 @@
   }
 }
 
-.development__photo-rocket {
+.development__wrapper-photo-rocket {
   @include content;
   @include content-margin;
   position: relative;
   z-index: 3;
+}
+
+.development__photo-rocket {
   width: 289px;
   height: 289px;
+  background-color: $blue-dark;
   background-image: url("../img/rocket.jpg");
   background-repeat: no-repeat;
   background-size: 289px 289px;
@@ -117,4 +121,101 @@
 
 .development__button {
   margin-top: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .development__mask {
+    @include tablet-content;
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 49px;
+  }
+
+  .development__title {
+    padding-bottom: 51px;
+  }
+
+  .development__paper-title {
+    padding-bottom: 15px;
+  }
+
+  .development__paper-title + .development__paper-text,
+  .development__paper-text--red {
+    max-width: 69%;
+  }
+
+  .development__photo-mask {
+    position: absolute;
+    top: 222px;
+    right: 14px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .development__paper-text {
+    padding-top: 9px;
+
+    &--red {
+    padding-top: 36px;
+    padding-bottom: 18px;
+
+      &::before {
+        top: 26px;
+        left: -11px;
+      }
+    }
+  }
+
+  .development__wrapper-cost {
+    background-color: transparent;
+    background-image:
+      url(../img/substrate-rocket-tablet.jpg),
+      linear-gradient(to right, $violet-dark 0%, $violet-light 100%);
+    background-size: 721px 377px;
+    min-width: 721px;
+    margin-top: -207px;
+  }
+
+  .development__wrapper-photo-rocket {
+    @include tablet-content;
+  }
+
+  .development__photo-rocket {
+    width: 253px;
+    height: 253px;
+    background-size: 264px 253px;
+    margin-left: 49px;
+  }
+
+  .development__cost {
+    @include tablet-content;
+    padding-top: 47px;
+    padding-bottom: 144px;
+  }
+
+  .development__paper {
+    max-width: 40%;
+    margin-left: 382px;
+  }
+
+  .development__cost-title {
+    padding-bottom: 12px;
+  }
+
+  .development__enroll-in-astronauts {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-right: 32px;
+    justify-content: space-between;
+  }
+
+  .development__money {
+    padding-top: 61px;
+  }
+
+  .development__on-mars {
+    padding-top: 47px;
+    max-height: 76px;
+  }
 }
