@@ -47,7 +47,7 @@
 
   .facts__item {
     &--tablet {
-    display: block;
+      display: block;
     }
 
     &:nth-child(-n+3)::after {

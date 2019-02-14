@@ -156,8 +156,8 @@
     padding-top: 9px;
 
     &--red {
-    padding-top: 36px;
-    padding-bottom: 18px;
+      padding-top: 36px;
+      padding-bottom: 18px;
 
       &::before {
         top: 26px;
@@ -169,7 +169,7 @@
   .development__wrapper-cost {
     background-color: transparent;
     background-image:
-      url(../img/substrate-rocket-tablet.jpg),
+      url("../img/substrate-rocket-tablet.jpg"),
       linear-gradient(to right, $violet-dark 0%, $violet-light 100%);
     background-size: 721px 377px;
     min-width: 721px;
