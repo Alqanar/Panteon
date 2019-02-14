@@ -118,3 +118,86 @@
     background-color: $red-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .destination {
+    background-image:
+      url("../img/substrate-destination(tablet).jpg"),
+      linear-gradient(to right, $crimson-dark 0%, $crimson-light 100%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:
+      765px 940px,
+      auto auto;
+    min-width: 750px;
+    margin-top: -79px;
+  }
+
+  .destination-wrapper {
+    @include tablet-content;
+    @include tablet-margin;
+    padding-bottom: 37px;
+  }
+
+  .destination__wrapper-title {
+    padding-top: 230px;
+  }
+
+  .destination__title {
+    font-size: 157px;
+    line-height: 52px;
+  }
+
+  .destination__text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .destination__wrapper-video-picture {
+    margin-top: 117px;
+
+    &::before {
+      top: 104px;
+      left: 253px;
+    }
+
+    &::after {
+      @include proxima;
+      position: absolute;
+      top: 117px;
+      left: 319px;
+      font-size: 16px;
+      content: "Смотреть видео";
+    }
+  }
+
+  .destination__video-picture {
+    width: 516px;
+    height: 259px;
+  }
+
+  .destination__video-description {
+    top: 723px;
+    left: 479px;
+  }
+
+  .destination__button-down {
+    width: 75px;
+    height: 75px;
+    margin-top: 51px;
+
+    &::before,
+    &::after {
+      width: 15px;
+      height: 15px;
+    }
+
+    &::before {
+      transform: translateX(23px) rotate(-45deg);
+    }
+
+    &::after {
+      transform: translate(18px, 0) rotate(-45deg);
+    }
+  }
+}
