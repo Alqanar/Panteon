@@ -92,3 +92,30 @@
 .questions__cell-checkbox:checked ~ .questions__wrapper-text .questions__text {
   padding-top: 11px;
 }
+
+@media (min-width: $tablet-width) {
+  .questions {
+    background-image: url("../img/substrate-questions-tablet.jpg");
+    background-size: 750px 1119px;
+    min-width: 750px;
+  }
+
+  .questions__wrapper {
+    @include tablet-content;
+    padding-top: 65px;
+  }
+
+  .questions__title {
+    line-height: 58px;
+    max-width: 90%;
+  }
+
+  .questions__wrapper-video-picture {
+    padding-top: 40px;
+
+    &::before {
+      top: 195px;
+      left: 336px;
+    }
+  }
+}
